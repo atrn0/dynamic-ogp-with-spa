@@ -1,6 +1,6 @@
 FROM node:12.18
 
-WORKDIR /ogp-proxy
+WORKDIR /app
 
 COPY package.json .
 COPY yarn.lock .
