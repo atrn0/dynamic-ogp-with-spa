@@ -1,0 +1,4 @@
+node_modules
+.gitginore
+.prettierrc.json
+Dockerfile

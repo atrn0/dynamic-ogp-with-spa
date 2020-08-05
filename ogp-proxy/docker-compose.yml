@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  ogp-proxy:
+    container_name: ogp-proxy
+    build:
+      context: .
+      dockerfile: Dockerfile
+    environment:
+      PORT: 8080
+    volumes:
+      - ./src:/app/src
+    ports:
+      - 9090:8080

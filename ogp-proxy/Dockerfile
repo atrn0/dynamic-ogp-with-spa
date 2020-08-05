@@ -4,6 +4,8 @@ WORKDIR /ogp-proxy
 
 COPY package.json .
 COPY yarn.lock .
-RUN yarn
+RUN yarn --prod
 
 COPY . .
+
+CMD yarn start
