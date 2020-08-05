@@ -2,5 +2,6 @@ html
   head
     meta(property="og:title" content=ogtitle)
   body
-    h1 #{path} from pug
+    h1 roomId: #{roomId}
     p og:title = #{ogtitle}
+    script window.location='/room/?id=#{roomId}'

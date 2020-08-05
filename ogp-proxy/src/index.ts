@@ -5,10 +5,16 @@ app.set('view engine', 'pug')
 
 const port = process.env.PORT || 8000
 
-app.get('*', (req, res) => {
+app.get('/room/*', (req, res) => {
+  res.status(404).end()
+})
+
+app.get('/:roomId', (req, res) => {
+  const roomId = req.params.roomId
+
   res.render('room', {
-    ogtitle: `${req.url} this is og:title!`,
-    path: req.url,
+    ogtitle: `room ${roomId}`,
+    roomId: roomId,
   })
 })
 
