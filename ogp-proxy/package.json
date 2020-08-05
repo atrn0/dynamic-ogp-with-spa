@@ -1,0 +1,9 @@
+{
+  "name": "ogp-proxy",
+  "version": "1.0.0",
+  "description": "proxy to insert OGP images",
+  "main": "index.js",
+  "author": "atrn0",
+  "license": "MIT",
+  "private": true
+}
