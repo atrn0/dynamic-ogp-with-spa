@@ -7,7 +7,9 @@
   "license": "MIT",
   "private": true,
   "scripts": {
-    "start": "ts-node src/index.ts"
+    "start": "ts-node src/index.ts",
+    "push": "gcloud builds submit --tag asia.gcr.io/xflag-lx-playground/ogp-proxy",
+    "deploy": "yarn push && gcloud run deploy ogp-proxy --image asia.gcr.io/xflag-lx-playground/ogp-proxy --platform managed --allow-unauthenticated"
   },
   "dependencies": {
     "@types/express": "^4.17.7",

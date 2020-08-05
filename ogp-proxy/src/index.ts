@@ -5,16 +5,14 @@ app.set('view engine', 'pug')
 
 const port = process.env.PORT || 8000
 
-app.get('/room/*', (req, res) => {
-  res.status(404).end()
-})
-
-app.get('/:roomId', (req, res) => {
+app.get('/room/:roomId', (req, res) => {
   const roomId = req.params.roomId
+  const redirectTo = `/join-room/${roomId}`
 
   res.render('room', {
     ogtitle: `room ${roomId}`,
     roomId: roomId,
+    redirectTo: redirectTo,
   })
 })
 

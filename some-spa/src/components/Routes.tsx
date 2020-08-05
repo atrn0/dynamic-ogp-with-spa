@@ -8,7 +8,10 @@ export function Routes() {
       {/* <Route path="/" exact>
                 <Page.Home />
             </Route> */}
-      <Route path="/room/:id" exact>
+      <Route path="/room" exact>
+        <Page.Room />
+      </Route>
+      <Route path="/join-room/:id" exact>
         <Page.RoomDetail />
       </Route>
     </Switch>

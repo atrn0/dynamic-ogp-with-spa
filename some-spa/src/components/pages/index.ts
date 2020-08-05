@@ -1,3 +1,4 @@
 import { RoomDetail } from "./RoomDetail";
+import { Room } from "./Room";
 
-export { RoomDetail };
+export { Room, RoomDetail };
