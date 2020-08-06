@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { useParams } from "react-router-dom";
+import { useParams, Link } from "react-router-dom";
 
 export const RoomDetail: React.FC = function () {
   const { id } = useParams();
@@ -8,5 +8,9 @@ export const RoomDetail: React.FC = function () {
     window.history.replaceState("", "", `/room/${id}`);
   }, [id]);
 
-  return <p>{id}</p>;
+  return (
+    <>
+      <p>{id}</p> <Link to="/room">戻る</Link>
+    </>
+  );
 };

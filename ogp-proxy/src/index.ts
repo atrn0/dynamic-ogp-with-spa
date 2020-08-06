@@ -13,6 +13,7 @@ app.get('/room/:roomId', (req, res) => {
     ogtitle: `room ${roomId}`,
     roomId: roomId,
     redirectTo: redirectTo,
+    ogimage: `https://via.placeholder.com/1200x680?text=roomId:+${roomId}`,
   })
 })
 

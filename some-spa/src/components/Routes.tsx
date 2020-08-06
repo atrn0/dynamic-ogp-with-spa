@@ -11,6 +11,9 @@ export function Routes() {
       <Route path="/room" exact>
         <Page.Room />
       </Route>
+      <Route path="/room/:id" exact>
+        <Page.RoomDetail />
+      </Route>
       <Route path="/join-room/:id" exact>
         <Page.RoomDetail />
       </Route>
